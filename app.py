@@ -265,7 +265,7 @@ feature_info = {
         "range": "A, B, or C",
         "example": "A = Small, B = Medium, C = Large",
         "icon": "🏬",
-        "default": "B"
+        "default": "A"
     },
     "Size": {
         "description": "Size of the store in square feet",
@@ -279,7 +279,7 @@ feature_info = {
         "range": "1 to 12",
         "example": "1 (Jan), 6 (Jun), 12 (Dec)",
         "icon": "📅",
-        "default": 6
+        "default": 10
     },
     "Year": {
         "description": "Year of the record",
@@ -474,7 +474,7 @@ with col1:
                         st.markdown(f"""
                         <div class="prediction-result">
                             <h3 style="margin-top:0;">Predicted Sales</h3>
-                            <div class="prediction-value">${prediction:,.2f}</div>
+                            <div class="prediction-value">${prediction:,.4f}M</div>
                             <p style="margin-bottom:0;">for the given parameters</p>
                         </div>
                         """, unsafe_allow_html=True)
